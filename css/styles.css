@@ -723,6 +723,7 @@ p {
 
 .telega {
   margin-left: 16px;
+
 }
 
 .input-footer {
@@ -872,6 +873,11 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: transparent;
 }
 
+.svg-bot {
+  transition: fill 2000ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+
 .box-vector {
   position: relative;
   margin-bottom: 16px;
@@ -882,12 +888,17 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
+.form-box-com {
+  margin-bottom: 16px 
+}
+
 .vektor-paige {
   position: absolute;
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+
 }
 
 .input-form:focus {
@@ -960,6 +971,7 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 transition: border  250ms cubic-bezier(0.4, 0, 0.2, 1);
 display: inline-flex;
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
 }
