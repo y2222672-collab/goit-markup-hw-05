@@ -763,7 +763,7 @@ p {
 }
 
 .modal-buttom {
-  border-radius: 100%;
+  border-radius: 50%;
   stroke-width: 1px;
   stroke: rgba(0, 0, 0, 0.1);
   border-color: #e7e9fc;
@@ -771,6 +771,8 @@ p {
   top: 24px;
   right: 24px;
   transition: background-color 250ms;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
 }
 
 .modal-buttom:hover,
@@ -886,7 +888,7 @@ p {
 }
 
 .lable-checkbox {
-  margin-left: 8px;
+ 
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16667;
@@ -920,7 +922,7 @@ p {
   padding: 16px 32px;
   width: 169px;
   height: 56px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  border: none;
   background: #4d5ae5;
   font-weight: 500;
   font-size: 16px;
@@ -930,8 +932,7 @@ p {
   margin-top: 24px;
   margin-right: auto;
   margin-left: auto;
-  display: flex;
-  justify-content: center;
+  display: block;
   transition: border-color 250ms linear;
 }
 
@@ -940,21 +941,10 @@ p {
   border-color: #404bbf;
 }
 
-.galka {
-}
-
-/* fill: #404bbf;
-border: 1px solid #404bbf; */
 
 .checkbox-input:checked + .lable-checkbox .span-box {
   background-color:  #404bbf;
   border-color: #404bbf;
   fill: #ffffff;
 }
-
-.chekbox-wraper-box {
-
-
-}
-
 
