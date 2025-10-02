@@ -487,102 +487,122 @@
             </li>
           </ul>
         </div>
-
+        <!-- ========================================TELEGRAM -->
         <div class="container-telega">
-
-          <p class="footer-title" >Subscribe</p>
+          <p class="footer-title">Subscribe</p>
           <form class="forma-dup">
-            <label class="footer-label ">
-
-              <input class="input-footer" type="email" name="email_address" placeholder="E-mail" />
+            <label class="footer-label">
+              <input
+                class="input-footer"
+                type="email"
+                name="email-address"
+                placeholder="E-mail"
+              />
             </label>
           </form>
-          <button class="button-footer">
-            Subscribe
+          <button type="submit" class="footer-button">
             <svg class="telega" width="24" height="24">
               <use href="./images/symboldefs.svg#icon-telegram"></use>
             </svg>
+             Subscribe
           </button>
-          </div>
         </div>
-     
+      </div>
     </footer>
 
-<!--============================= BACDROP with modal ==============================-->
+    <!--============================= BACDROP with modal ==============================-->
 
-<div class="backdrop">
+    <div class="backdrop">
+      <div class="modal-window">
+        <button class="modal-buttom" type="button">
+          <svg width="8" height="8">
+            <use href="./images/symboldefs.svg#icon-exit-file"></use>
+          </svg>
+        </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form class="modal-form-demo">
+          <div class="form-box">
+            <label class="label-modal-form" for="user-name">Name</label>
 
+            <div class="box-vector">
+              <input
+                class="input-form"
+                type="text"
+                id="user-name"
+                name="user-name"
+                required
+              />
+              <svg class="vektor-paige" width="18" height="24">
+                <use href="./images/symboldefs.svg#icon-persona-none"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-box">
+            <label class="label-modal-form" for="userphone">Phone</label>
 
-<div class="modal-window">
-<button class="modal-buttom" type="button">
-  <svg  width="8" height="8">
-    <use  href="./images/symboldefs.svg#icon-exit-file"></use>
-  </svg>
-</button>
-<p class="modal-title">Leave your contacts and we will call you back</p>
-<form class="modal-form-demo">
+            <div class="box-vector">
+              <input
+                class="input-form"
+                type="tel"
+                id="userphone"
+                name="userphone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              />
+              <svg class="vektor-paige" width="18" height="24">
+                <use href="./images/symboldefs.svg#icon-phone-"></use>
+              </svg>
+            </div>
+          </div>
 
-  <div class="form-box">  
-<label class="label-modal-form" for="user-name" >Name</label>
+          <div class="form-box">
+            <label class="label-modal-form" for="usermail">Email</label>
 
-<div class="box-vector">
-<input class="input-form"  type="text" id="user-name" name="user-name" required>
-<svg  class="vektor-paige" width="18" height="24">
-  <use href="./images/symboldefs.svg#icon-persona-none" ></use>
-</svg> 
-</div>
+            <div class="box-vector">
+              <input
+                class="input-form"
+                type="email"
+                id="usermail"
+                name="usermail"
+              />
+              <svg class="vektor-paige" width="18" height="24">
+                <use href="./images/symboldefs.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
 
-</div>
-<div class="form-box">  
-<label class="label-modal-form" for="userphone" >Phone</label>
+          <div class="form-box">
+            <label class="label-modal-form" for="user-comment"> Comment</label>
+            <textarea
+              class="texteria-modal-demo"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
 
+          <div class="chekbox-wraper-box">
+            <input
+              class="checkbox-input visually-hidden"
+              type="checkbox"
+              name="polycy"
+              id="polycy"
+              value="true"
+              required
+            />
+            <label class="lable-checkbox" for="polycy">
+              <span class="span-box">
+                <svg class="galka" width="10" height="8">
+                  <use href="./images/symboldefs.svg#icon-galka"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="privat" href="/index.html">Privacy Policy </a>
+            </label>
+          </div>
 
-<div class="box-vector">
-<input class="input-form"  type="tel" id="userphone"  name="userphone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
-  <svg class="vektor-paige"  width="18" height="24" >
-    <use href="./images/symboldefs.svg#icon-phone-"></use>
-  </svg>
-</div>
-
-</div>
-
-
-<div class="form-box">  
-<label class="label-modal-form" for="usermail" >Email</label>
-
-
-<div class="box-vector" >
-<input class="input-form"  type="email"  id="usermail" name="usermail" >
-<svg  class="vektor-paige" width="18" height="24">
-  <use href="./images/symboldefs.svg#icon-email"></use>
-</svg>
-
-
-</div>
-
-</div>
-
-
-<div class="form-box">  
-<label class="label-modal-form" for="user-comment" > Comment</label>
-<textarea class="texteria-modal-demo"   name="user-comment" id="user-comment" placeholder="Text input"></textarea>
-  </div>
-
-<div class="chekbox-wraper-box">  
-  <input  class="checkbox-input visually-hidden " type="checkbox" name="polycy"  id="polycy" value="true"  required>
-  <label class="lable-checkbox"  for="polycy">
-<span class="span-box">
-    <svg class="galka" width="10" height="8" >
-      <use href="./images/symboldefs.svg#icon-galka"></use>
-    </svg>
-</span>
-I accept the terms and conditions of the <a class="privat" href="/index.html">Privacy Policy </a> </label>
-</div>
-
-<button class="send-button" type="submit">   Send </button>
-
-</form>
-</div>
-</div>
+          <button class="send-button" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
