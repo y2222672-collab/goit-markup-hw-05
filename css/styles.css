@@ -414,16 +414,6 @@ p {
   fill: white;
 }
 
-/* .icons:hover {
-  background-color: #404bbf;
-}
-
-.icons:focus {
-  background-color: #404bbf;
-} */
-
-/* brak */
-
 .work-title {
   font-weight: 700;
   font-size: 36px;
@@ -905,6 +895,24 @@ p {
   font-size: 12px;
   line-height: 1.16667;
   letter-spacing: 0.04em;
+  position: relative;
+  padding-left: 24px;
+}
+
+.span-box {
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  width: 16px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 2px;
+  fill: transparent;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .send-button {
@@ -931,3 +939,22 @@ p {
 .send-button:focus {
   border-color: #404bbf;
 }
+
+.galka {
+}
+
+/* fill: #404bbf;
+border: 1px solid #404bbf; */
+
+.checkbox-input:checked + .lable-checkbox .span-box {
+  background-color:  #404bbf;
+  border-color: #404bbf;
+  fill: #ffffff;
+}
+
+.chekbox-wraper-box {
+
+
+}
+
+
