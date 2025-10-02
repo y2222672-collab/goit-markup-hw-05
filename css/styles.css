@@ -40,6 +40,8 @@ a {
 button {
   cursor: pointer;
   font-family: 'Roboto', sans-serif;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-class {
@@ -775,6 +777,8 @@ visibility: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 72px 24px 24px 24px;
 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 visibility: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 
 }
 
@@ -796,7 +800,8 @@ visibility: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #e7e9fc;
   padding: 0;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  border: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -809,10 +814,11 @@ visibility: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: none;
 }
 
-/* .backdrop.open-moodal {
+.backdrop.open-moodal {
   opacity: 1;
   pointer-events: auto;
-} */
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .modal-title {
   font-weight: 500;
@@ -951,8 +957,8 @@ visibility: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: absolute;
   bottom: 0;
   left: 0;
-background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-border: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: border  250ms cubic-bezier(0.4, 0, 0.2, 1);
 display: inline-flex;
 
 
@@ -975,7 +981,8 @@ display: inline-flex;
   margin-left: auto;
   display: block;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
+  transition: border  250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
