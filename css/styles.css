@@ -615,12 +615,12 @@ p {
   display: inline-block;
 }
 
-.footer-vektor {
+/* .footer-vektor {
   display: flex;
   align-items: baseline;
   justify-content: flex-start;
   flex-direction: column;
-}
+} */
 
 .footer-title {
   font-weight: 500;
@@ -630,6 +630,7 @@ p {
   color: #ffffff;
   margin-bottom: 16px;
   font-family: 'Roboto', sans-serif;
+  display: block;
 }
 
 .fantasy {
@@ -692,9 +693,10 @@ p {
 }
 
 .container-telega {
-  /* max-width: 453px; */
+  max-width: 453px;
   margin-left: 80px;
   display: flex;
+  flex-direction: column;
 }
 
 .footer-label {
@@ -723,7 +725,6 @@ p {
 
 .telega {
   margin-left: 16px;
-
 }
 
 .input-footer {
@@ -759,14 +760,13 @@ p {
   z-index: 999999;
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-visibility: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  visibility: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* pointer-events: none; */
 }
 
-
 .modal-window {
-  width: 408px; 
-  min-height: 584px; 
+  width: 408px;
+  min-height: 584px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background: #fcfcfc;
@@ -776,11 +776,8 @@ visibility: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 72px 24px 24px 24px;
-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-visibility: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-
+  visibility: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-buttom {
@@ -802,15 +799,11 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 0;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
- 
 }
-
-
-
 
 .modal-buttom:hover,
 .modal-buttom:focus {
- fill: #ffffff;
+  fill: #ffffff;
   background-color: #404bbf;
   border: none;
 }
@@ -873,17 +866,6 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: transparent;
 }
 
-.svg-bot {
-  transition: fill 2000ms cubic-bezier(0.4, 0, 0.2, 1);
-  
-}
-
-.svg-bot:hover,
-.svg-bot:focus {
-  fill: #ffffff;
-}
-
-
 .box-vector {
   position: relative;
   margin-bottom: 16px;
@@ -891,11 +873,11 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .chekbox-wraper-box {
   margin-bottom: 24px;
+  display: flex;
 }
 
-
 .form-box-com {
-  margin-bottom: 16px 
+  margin-bottom: 16px;
 }
 
 .vektor-paige {
@@ -903,8 +885,7 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-form:focus {
@@ -958,7 +939,6 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   line-height: 1.17;
   letter-spacing: 0.04em;
   position: relative;
-  padding-left: 24px;
 }
 
 .span-box {
@@ -971,21 +951,18 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   border-radius: 2px;
   fill: transparent;
-  position: absolute;
   bottom: 0;
   left: 0;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-transition: border  250ms cubic-bezier(0.4, 0, 0.2, 1);
-display: inline-flex;
-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-
+  display: inline-flex;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .send-button {
   border-radius: 4px;
   padding: 16px 32px;
- min-width: 169px;
+  min-width: 169px;
   height: 56px;
   border: none;
   background: #4d5ae5;
@@ -999,9 +976,8 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-left: auto;
   display: block;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border  250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .send-button:hover,
@@ -1013,7 +989,6 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .checkbox-input:checked + .lable-checkbox .span-box {
   background-color: #404bbf;
   border-color: #404bbf;
-  fill:#F4F4FD;
-  border: none; 
-
+  fill: #f4f4fd;
+  border: none;
 }
